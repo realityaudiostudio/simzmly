@@ -104,4 +104,8 @@ text-align: center;}
                     line-height: 2px;padding: 15px;color: white;width: 100px;
                     height: 50px;border: 0;}
 
+                    @media only screen and (min-width: 768px) { .course {display: flex;justify-content: center;align-items: center;padding: 50px;}
+                    .crscrd{width: 100%;}
+                    .sat{width: 27%;height: 48%;}
+                    }
 
