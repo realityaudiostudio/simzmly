@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Simz Academy</title>
 </head>
 <body>
@@ -30,19 +31,17 @@
         <p style="font-weight: 600;font-size: 25px;line-height: 32px;">Feel Free to contact</p>
     <p style="font-weight: 400; font-size: 15px; line-height: 19px;">We will try our level best to contact you!</p></div>
     <div class="cnfrm">
-    <form action="https://formsubmit.co/realityaudiostudio@gmail.com" method="POST">
-        <input type="hidden" name="_next" value="https://realityaudiostudio.github.io/simzmly">
+        <form id="submit-form" action="">
     <input type="text" placeholder="Name" name="name" style="height: 45px;border: 1px solid #692A7B;border-radius: 8px;" required>
     <div style="width: 100%;height:25px;"></div>
-    <input type="tel" placeholder="Whatsapp No" name="whatsapp" style="height: 45px;border: 1px solid #692A7B;border-radius: 8px;" required>
+    <input type="text" placeholder="Whatsapp No" name="whatsapp" style="height: 45px;border: 1px solid #692A7B;border-radius: 8px;" required>
     <div style="width: 100%;height:25px;"></div>
     <input type="email" name="email" placeholder="Email Address" style="height: 45px;border: 1px solid #692A7B;border-radius: 8px;" >
     <div style="width: 100%;height:25px;"></div>
     <input type="text" placeholder="Message here" name="message" style="height: 187px;border: 1px solid #692A7B;border-radius: 8px;" required><br>
     <div style="width: 100%;height:25px;"></div>
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_autoresponse" value="Thanks for your reply">
-    <button type="submit" class="sndbtn">Send</button>
+    <input type="submit" value="Submit"  class="sndbtn">
+</form>
     </div>
         <div style="width: 100%;height:76px;"></div>
         <div style="padding-left: 15px;">
@@ -53,6 +52,25 @@
         <a href="#">Website developed and maintained by AJS dev lab</a>
         <p>Copyright@2022 for SIMZ Academy</p>
     </div>
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzQWveQrKAnq7Vnj3ncuw8iQlYmjmwVetASpe2CFhrYgXIIPrTqFvcWGvs_rVObv5q3zw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
 <script src="script.js"></script>
 </html>
