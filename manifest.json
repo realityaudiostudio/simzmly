@@ -1,7 +1,7 @@
 {
   "name": "Simz Academy",
-  "short_name": "simz",
-  "theme_color": "#692A7B",
+  "short_name": "Simz Academy",
+  "theme_color": "#262626",
   "background_color": "#692A7B",
   "display": "standalone",
   "orientation": "",
