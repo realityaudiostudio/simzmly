@@ -1,85 +1,952 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/icons/icon-72x72.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <title>Simz Academy</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>SIMZ Academy | School of Innovative Music | Online & Offline Music Classes</title>
+  <meta name="title" content="SIMZ Academy | School of Innovative Music | Online & Offline Music Classes">
+  <meta name="description" content="SIMZ Academy provides premier music education specializing in Trinity College London syllabus keyboard and piano classes, guitar, violin, and sound engineering in Chungathara, Manimooly & online.">
+  <meta name="keywords" content="SIMZ Academy, music academy Kerala, keyboard classes, piano Trinity syllabus, guitar classes, violin lessons, sound engineering, Chungathara, Manimooly, Simjo V George">
+  <meta name="author" content="SIMZ Academy">
+  <meta name="theme-color" content="#692A7B">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.simzmuzic.com/">
+  <meta property="og:title" content="SIMZ Academy | School of Innovative Music">
+  <meta property="og:description" content="Learning Music means Enjoying the Music. Come, Let's Get Started with Trinity syllabus keyboard, guitar, violin, and audio engineering.">
+  <meta property="og:image" content="https://www.simzmuzic.com/img/smlg.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.simzmuzic.com/">
+  <meta property="twitter:title" content="SIMZ Academy | School of Innovative Music">
+  <meta property="twitter:description" content="Learning Music means Enjoying the Music. Come, Let's Get Started with Trinity syllabus keyboard, guitar, violin, and audio engineering.">
+  <meta property="twitter:image" content="https://www.simzmuzic.com/img/smlg.jpg">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" sizes="72x72" href="images/icons/icon-72x72.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Stylesheets & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mnimg">
-        <div class="w3-animate-bottom"><div class="nav"><img src="img/simz logo.png" style="width:54.49px;height:60px;"><p>Simz Academy <img src="img/ico.png" onclick="ajsfun()"></p></div>
-        <div class="dropdown">
-            <div class="dropdown-content" id="drdw">
-            <a href="#">Home</a>
-            <a href="course.html">Courses</a>
-            <a href="https://www.youtube.com/watch?v=ieZLoGxHKDo">Demo Class</a>
-            <a href="team.html">Team</a>
-            <a href="gly.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+
+  <!-- Site Header & Sticky Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="SIMZ Academy Home">
+        <img src="img/simz logo.png" alt="SIMZ Academy Logo" class="brand-logo-img" width="44" height="48">
+        <div class="brand-text">
+          <span class="brand-name">SIMZ <span>Academy</span></span>
+          <span class="brand-tagline">School of Innovative Music</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="course.html" class="nav-link">Courses</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="gly.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Nav Actions -->
+      <div class="nav-actions">
+        <a href="#demo-cta" class="btn btn-primary btn-sm">
+          <i class="ri-calendar-check-line"></i> Book a Free Demo
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-nav" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">
+        <span><i class="ri-home-4-line"></i> Home</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="course.html" class="mobile-nav-link">
+        <span><i class="ri-music-2-line"></i> Courses</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="#about" class="mobile-nav-link">
+        <span><i class="ri-information-line"></i> About SIMZ</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="team.html" class="mobile-nav-link">
+        <span><i class="ri-team-line"></i> Team & Founder</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="gly.html" class="mobile-nav-link">
+        <span><i class="ri-gallery-line"></i> Photo Gallery</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span><i class="ri-contacts-line"></i> Contact Us</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+    </nav>
+
+    <div class="mobile-nav-cta">
+      <a href="#demo-cta" class="btn btn-primary btn-block">
+        <i class="ri-calendar-check-line"></i> Book a Free Demo
+      </a>
+      <a href="https://wa.me/917907386458?text=Hello%20Simz%20Academy,%20I%20would%20like%20to%20know%20more%20about%20your%20courses." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
+        <i class="ri-whatsapp-line"></i> WhatsApp Enquiry
+      </a>
+    </div>
+
+    <div class="mobile-nav-contact-info">
+      <p><strong>SIMZ Academy Locations:</strong><br>Chungathara & Manimooly, Kerala</p>
+      <a href="tel:+919072397378"><i class="ri-phone-line"></i> +91 9072397378</a>
+      <a href="mailto:simzzacademy@gmail.com"><i class="ri-mail-line"></i> simzzacademy@gmail.com</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-ambient-bg"></div>
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Copy / Narrative -->
+          <div class="hero-content">
+            <div class="hero-pill">
+              <i class="ri-music-fill"></i> School of Innovative Music • Est. 2016
+            </div>
+            
+            <h1 class="hero-title">
+              Learning Music means <span class="hero-title-highlight">Enjoying the Music.</span> Come, Let’s Get Started!
+            </h1>
+            
+            <p class="hero-description">
+              SIMZ Academy delivers premier online and offline music education based on the prestigious <strong>Trinity College London (TCL)</strong> syllabus for Keyboard and Piano, alongside classical Guitar, Western Violin, and Sound Engineering.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#courses" class="btn btn-primary btn-lg">
+                <i class="ri-compass-3-line"></i> Explore Courses
+              </a>
+              <a href="#demo-cta" class="btn btn-secondary btn-lg">
+                <i class="ri-calendar-event-line"></i> Book a Free Demo
+              </a>
+              <button type="button" class="btn btn-ghost-white btn-sm" onclick="openVideoModal('ieZLoGxHKDo')" style="color: var(--color-primary) !important; border: 1px solid var(--color-primary-border); background-color: var(--color-primary-50);" aria-label="Watch Demo Video">
+                <i class="ri-play-circle-fill" style="color: #FF0000; font-size: 1.25rem;"></i> Watch Demo Class
+              </button>
+            </div>
+
+            <!-- Authentic Trust Badges -->
+            <div class="hero-badges">
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon"><i class="ri-award-fill"></i></div>
+                <span>Trinity College London Syllabus</span>
+              </div>
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon"><i class="ri-user-smile-fill"></i></div>
+                <span>100+ Happy Students</span>
+              </div>
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon"><i class="ri-global-line"></i></div>
+                <span>Online & Offline Studios</span>
+              </div>
             </div>
           </div>
-        <div class="cnmn"><p>Learning Music means Enjoying the Music. Come, Let’s Get Started!</p></div>
-        <div class="tsa"><p>This is Simz Academy</p></div>
-    </div></div>
-    <div style="width: 100%;height:75px;"></div>
-    
-    <div class="abt">
-        <img src="img/smlg.jpg"style="border-radius:50%;">
-        <h3>A Word About...</h3>
-    <p>SIMZ Academy is mainly focused on teaching keyboard classes based on TCL syllabus from 2016 onwards. SIMZ Academy is an online as well as an offline platform for learning Keyboard and Piano and offers the best musical experience  for the candidates.</p></div>
-    <div style="width: 100%;height:48px;"></div>
-    <div class="abhl"><div class="hlp">
-        <div style="width: 74px;height:6px;background-color:#692A7B;left:34;"></div>
-        <h3>How do we help?</h3>
-    <p>We will help you to get better experience on Music Talent and helps to develop Your Musical Skills</p></div>
-<div class="excl">
-    <div style="display: block;padding-left: 36px;padding-right: 36px;"><h3 style="font-size: 40px;font-weight:600;height:8px;">5+</h3><br><p style="font-size: 12px;font-weight:400;height:1px;">Musical Courses</p></div>
-    <div style="height:63px;width:5px;background-color: #692A7B;display:block; align-items: center;justify-content: center;"></div>
-    <div style="display: block;padding-left: 36px;padding-right: 36px;"><h3 style="font-size: 40px;font-weight:600;height:8px;">100+</h3><br><p style="font-size: 12px;font-weight:400;height:1px;">Happy Students</p></div>
-</div></div>
-<div style="width: 100%;height:38px;"></div>
-<div class="crvr">
-    <p style="font-size:30px;font-weight: 600;">Classes on</p></div>
-    <!--Course Variant-->
-    <div class="crds">
-    <div class="crit"><img src="img/keyic.png"><div style="display: block;padding-left: 35px;"><h3 style="height: 30px;font-size:25px;font-weight:600;">Keyboard</h3><p style="font-size:12px;font-weight:400;">Learn keyboard lessons<br>according to Trinity Syllabus</p></div></div>
-    <div style="width: 100%;height:38px;"></div>
-    <div class="crit"><img src="img/guiic.png"><div style="display: block;padding-left: 35px;"><h3 style="height: 30px;font-size:25px;font-weight:600;">Guitar</h3><p style="font-size:12px;font-weight:400;">Finger style and classical<br>Learning</p></div></div>
-    <div style="width: 100%;height:38px;"></div>
-    <div class="crit"><img src="img/vioic.png"><div style="display: block;padding-left: 35px;"><h3 style="height: 30px;font-size:25px;font-weight:600;">Violin</h3><p style="font-size:12px;font-weight:400;">Western learning way<br>of Violin</p></div></div>
-    <div style="width: 100%;height:38px;"></div></div>
-    <!--Course Varient END-->
-    <div class="crvr">
-        <div style="width: 74px;height:6px;background-color:#692A7B;left:34;"></div>
-        <p style="font-size:30px;font-weight: 600;">Showcase</p></div>
-        <div class="scrollmenu"><a href="https://www.youtube.com/watch?v=_epjOyO6Lbk"><img src="img/show1.png"></a><a href="https://www.youtube.com/watch?v=IFqZANAmoMw"><img src="img/show2.png"></a><a href="https://www.youtube.com/shorts/XWU6pxeeGGc"><img src="img/show3.png"></a><a href="https://www.youtube.com/watch?v=DT3iAmT6nTc"><img src="img/show4.png"></a></div>
-        <div style="width: 100%;height:38px;"></div>
-        <div class="cnt"><h3 style="font-style: normal;font-weight: 400;font-size: 25px;">We are ready!</h3>
-        <img src="img/whts.png">
-        <p style="font-weight: 400;font-size: 15px;line-height: 19px;">Your lessons are a click away. Get more details by contacting us via Whatsapp</p>
-        <div class="cnbt" onclick="myFunction()">Get Started</div>
+
+          <!-- Hero Visual Media Composition -->
+          <div class="hero-media-wrapper">
+            <div class="hero-card-stack">
+              <img src="img/photo1660568008.jpeg" alt="Student keyboard practice at SIMZ Academy" class="hero-main-img" width="959" height="1280">
+              <div class="hero-card-overlay">
+                <h4>Authentic Academy Training</h4>
+                <p>Personalized instrument mentoring designed to nurture lifelong musical talent.</p>
+              </div>
+            </div>
+
+            <!-- Floating Highlights -->
+            <div class="floating-pill floating-pill-left">
+              <i class="ri-shield-check-fill" style="color: var(--color-gold); font-size: 1.25rem;"></i>
+              <span>Grade-Certified Syllabus</span>
+            </div>
+            <div class="floating-pill floating-pill-right">
+              <i class="ri-map-pin-2-fill" style="color: var(--color-primary); font-size: 1.25rem;"></i>
+              <span>Chungathara & Manimooly</span>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section" style="padding-top: 0; margin-top: -30px;" aria-label="Academy Statistics">
+      <div class="container">
+        <div class="stats-banner">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Musical Courses</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">100+</div>
+              <div class="stat-label">Happy Students</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2016</div>
+              <div class="stat-label">Teaching Since</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Studio Campuses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About SIMZ Academy Section -->
+    <section class="section section-bg-white" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Visual Column -->
+          <div class="about-visual">
+            <div class="about-img-frame">
+              <img src="img/gallery/gallery-6.png" alt="Keyboard class rehearsal at SIMZ Academy" loading="lazy" width="1920" height="1080">
+            </div>
+            <div class="about-seal-badge" title="SIMZ Academy Official Seal">
+              <img src="img/smlg.jpg" alt="SIMZ Academy Seal" loading="lazy" width="896" height="858">
+            </div>
+          </div>
+
+          <!-- Narrative Column -->
+          <div class="about-content">
+            <div class="brand-accent-bar"></div>
+            <span class="section-tag">A Word About SIMZ</span>
+            <h2 class="section-title">Nurturing Musical Skills with Trinity Syllabus Standards</h2>
+            <p class="section-subtitle" style="font-size: 1.0625rem; margin-bottom: 20px;">
+              SIMZ Academy is mainly focused on teaching keyboard classes based on the <strong>Trinity College London (TCL) syllabus</strong> from 2016 onwards. 
+            </p>
+            <p>
+              SIMZ Academy is an online as well as an offline platform for learning Keyboard and Piano and offers the best musical experience for all candidates. We believe music education should combine rigorous technical mastery with the pure joy of musical expression.
+            </p>
+
+            <!-- Authentic Feature Matrix -->
+            <div class="about-features-list">
+              <div class="about-feature-item">
+                <div class="about-feature-icon"><i class="ri-book-read-line"></i></div>
+                <div>
+                  <h5>Trinity College London</h5>
+                  <p>Structured grades, sight-reading, ear training and international exam prep.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-icon"><i class="ri-computer-line"></i></div>
+                <div>
+                  <h5>Hybrid Flexibility</h5>
+                  <p>In-studio sessions in Chungathara & Manimooly, or live interactive online classes.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-icon"><i class="ri-user-heart-line"></i></div>
+                <div>
+                  <h5>Individual Mentoring</h5>
+                  <p>Paced learning tailored to each candidate’s natural musical abilities.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-item">
+                <div class="about-feature-icon"><i class="ri-sound-module-line"></i></div>
+                <div>
+                  <h5>Audio Production</h5>
+                  <p>Exclusive Sound Engineering recorded masterclasses for music creators.</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="team.html" class="btn btn-secondary">
+                <i class="ri-user-star-line"></i> Meet Our Founder & Story
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Showcase Section -->
+    <section class="section section-bg-subtle" id="courses">
+      <div class="container">
         
-        <div style="width: 100%;height:76px;"></div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.031571880026!2d76.27242357491623!3d11.332402988852136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6231ecae6857b%3A0xa2e16d220ff37a13!2sSimz%20Academy!5e0!3m2!1sen!2sin!4v1687784524095!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        <div style="padding-left: 15px;">
-            <div style="width: 74px;height:6px;background-color:#692A7B;left:34;"></div>
-            <h2>SIMZ Academy</h2></div>
-        <div class="adrs"><div style="display: block;"><p><i class="ri-map-pin-line"></i> Chungathara</p><p><i class="ri-map-pin-line"></i> Manimooly</p><p><i class="ri-phone-line"></i> +919072397378</p><p><i class="ri-mail-add-line"></i> simzzacademy@gmail.com</p></div><div style="display: block;"><p><i class="ri-instagram-line"></i> Instagram</p><p><i class="ri-facebook-circle-line"></i> Facebook</p><p><i class="ri-whatsapp-line"></i> Whatsapp</p><p><i class="ri-linkedin-line"></i> Linkedin</p></div></div>
-        <div class="bi"> <a href="#">Website developed and maintained by AJS Web Creatives</a>
-        <p>Copyright@2023 for SIMZ Academy</p>
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Curriculum & Classes</span>
+          <h2 class="section-title">Explore Our Musical Courses</h2>
+          <p class="section-subtitle">
+            Whether starting your first instrument or preparing for international grade examinations, SIMZ Academy provides dedicated instruction across performance and production.
+          </p>
+        </div>
+
+        <div class="courses-grid">
+          
+          <!-- Course 1: Keyboard -->
+          <article class="course-card">
+            <span class="course-card-badge">Trinity Syllabus</span>
+            <div class="course-card-media">
+              <img src="img/gallery/gallery-6.png" alt="Keyboard Class at SIMZ Academy" loading="lazy" width="1920" height="1080">
+              <div class="course-card-icon-overlay">
+                <img src="img/keyic.png" alt="Keyboard Icon" width="60" height="60">
+              </div>
+            </div>
+            <div class="course-card-body">
+              <span class="course-card-category">Keyboard & Piano</span>
+              <h3 class="course-card-title">Keyboard Education</h3>
+              <p class="course-card-desc">
+                Learn keyboard lessons according to the Trinity College London (TCL) Syllabus from initial to higher grades. Covers sight-reading, scales, chord theory, and western classical pieces.
+              </p>
+              <div class="course-card-meta">
+                <span class="course-meta-item"><i class="ri-map-pin-line"></i> Online & Offline</span>
+                <span class="course-meta-item"><i class="ri-award-line"></i> TCL Syllabus</span>
+                <span class="course-meta-item"><i class="ri-user-3-line"></i> All Ages</span>
+              </div>
+              <div class="course-card-footer">
+                <a href="course.html#keyboard" class="btn btn-primary btn-block btn-sm">
+                  <i class="ri-information-line"></i> Explore Course Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 2: Guitar -->
+          <article class="course-card">
+            <span class="course-card-badge">Fingerstyle & Classical</span>
+            <div class="course-card-media">
+              <img src="img/gallery/gallery-7.png" alt="Guitar Class at SIMZ Academy" loading="lazy" width="1920" height="1080">
+              <div class="course-card-icon-overlay">
+                <img src="img/guiic.png" alt="Guitar Icon" width="60" height="60">
+              </div>
+            </div>
+            <div class="course-card-body">
+              <span class="course-card-category">Strings</span>
+              <h3 class="course-card-title">Guitar Learning</h3>
+              <p class="course-card-desc">
+                Finger style and classical learning techniques. Develop accurate posture, fingerpicking dexterity, open and bar chords, fretboard navigation, and contemporary rhythm play.
+              </p>
+              <div class="course-card-meta">
+                <span class="course-meta-item"><i class="ri-map-pin-line"></i> Online & Offline</span>
+                <span class="course-meta-item"><i class="ri-music-line"></i> Fingerstyle & Classical</span>
+                <span class="course-meta-item"><i class="ri-user-3-line"></i> Beginners to Advanced</span>
+              </div>
+              <div class="course-card-footer">
+                <a href="course.html#guitar" class="btn btn-primary btn-block btn-sm">
+                  <i class="ri-information-line"></i> Explore Course Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Course 3: Violin -->
+          <article class="course-card">
+            <span class="course-card-badge">Western Classical</span>
+            <div class="course-card-media">
+              <img src="img/gallery/gallery-8.png" alt="Violin Class at SIMZ Academy" loading="lazy" width="1920" height="1080">
+              <div class="course-card-icon-overlay">
+                <img src="img/vioic.png" alt="Violin Icon" width="60" height="60">
+              </div>
+            </div>
+            <div class="course-card-body">
+              <span class="course-card-category">Strings</span>
+              <h3 class="course-card-title">Violin Education</h3>
+              <p class="course-card-desc">
+                Western learning way of Violin. Focuses on proper bowing posture, finger placement, pitch intonation, ear training, and standard musical notation reading.
+              </p>
+              <div class="course-card-meta">
+                <span class="course-meta-item"><i class="ri-map-pin-line"></i> In-Studio Coaching</span>
+                <span class="course-meta-item"><i class="ri-music-2-line"></i> Western Way</span>
+                <span class="course-meta-item"><i class="ri-user-3-line"></i> Dedicated Mentorship</span>
+              </div>
+              <div class="course-card-footer">
+                <a href="course.html#violin" class="btn btn-primary btn-block btn-sm">
+                  <i class="ri-information-line"></i> Explore Course Details
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Discrepancy Callout Banner highlighting Sound Engineering -->
+        <div class="callout-box" style="margin-top: 36px;">
+          <div class="callout-icon"><i class="ri-disc-line"></i></div>
+          <div>
+            <h5>Also Offering: Sound Engineering Masterclasses (Batch 1 & Part-2)</h5>
+            <p>
+              SIMZ Academy provides recorded audio production masterclasses with 10 structured YouTube video modules and email-based access. 
+              <a href="course.html#sound-engineering" class="text-link" style="margin-left: 6px;">View Sound Engineering curriculum <i class="ri-arrow-right-line"></i></a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Why SIMZ Academy / Learning Experience -->
+    <section class="section section-bg-white" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">How Do We Help?</span>
+          <h2 class="section-title">The SIMZ Musical Experience</h2>
+          <p class="section-subtitle">
+            We help you gain a better experience with your musical talent and develop practical skills that last a lifetime.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-music-fill"></i></div>
+            <h4>Enjoying the Music</h4>
+            <p>
+              Our guiding philosophy: true musical growth happens when learning is joyful, inspiring, and creatively fulfilling rather than purely mechanical.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-award-line"></i></div>
+            <h4>Trinity Syllabus Benchmark</h4>
+            <p>
+              Structured grade lessons based on Trinity College London guidelines, giving candidates internationally recognized certification opportunities.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-swap-line"></i></div>
+            <h4>Online & Offline Options</h4>
+            <p>
+              Learn in person at our physical campuses in Chungathara and Manimooly, or join live interactive online sessions from anywhere.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-pulse-line"></i></div>
+            <h4>Talent to Practical Skill</h4>
+            <p>
+              Structured ear training, sight-reading, rhythm exercises, and performance showcases turn raw enthusiasm into real artistic capability.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Spotlight Section -->
+    <section class="section section-bg-subtle" id="founder">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Academy Leadership</span>
+          <h2 class="section-title">Meet Our Founder</h2>
+          <p class="section-subtitle">
+            The certified musical background and vision behind SIMZ Academy.
+          </p>
+        </div>
+
+        <div class="founder-card">
+          <div class="founder-grid">
+            <div class="founder-media">
+              <img src="img/svg.png" alt="Simjo V George, Founder and CEO of SIMZ Academy" class="founder-img" loading="lazy" width="359" height="374">
+            </div>
+            <div class="founder-content">
+              <span class="founder-tag">Founder & CEO</span>
+              <h3 class="founder-name">Simjo V George</h3>
+              <p class="founder-role">Director of Music Education</p>
+
+              <div class="founder-credentials">
+                <i class="ri-medal-fill founder-credentials-icon"></i>
+                <div>
+                  <p><strong>Trinity College London Certified:</strong></p>
+                  <p>Secured and awarded Grade 5 in Keyboard and Grade 2 in Piano from Trinity College, London.</p>
+                </div>
+              </div>
+
+              <p class="founder-bio">
+                Simjo founded SIMZ Academy in 2016 to bridge traditional classical grade education with modern, engaging performance methods. Under his leadership, the academy has mentored over 100 students across Malappuram and global online batches.
+              </p>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="team.html" class="btn btn-primary btn-sm">
+                  <i class="ri-team-line"></i> Read Full Profile
+                </a>
+                <a href="https://wa.me/917907386458?text=Hello%20Simjo,%20I%20would%20like%20to%20enquire%20about%20music%20classes." target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                  <i class="ri-chat-3-line"></i> Connect Directly
+                </a>
+              </div>
+
+              <p class="founder-verification-note">
+                Note: Name verified as Simjo V George; credentials verified from original academy archives (Trinity College London Grade 5 Keyboard & Grade 2 Piano).
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Student & Performance Showcase (Preserving YouTube Originals) -->
+    <section class="section section-bg-white" id="showcase">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Student Showcase</span>
+          <h2 class="section-title">Performances & Highlights</h2>
+          <p class="section-subtitle">
+            Watch authentic student recitals, keyboard showcases, and performance videos from SIMZ Academy.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          
+          <!-- Video 1 -->
+          <article class="showcase-card">
+            <div class="showcase-thumbnail-wrap" onclick="openVideoModal('_epjOyO6Lbk')" role="button" tabindex="0" aria-label="Play Keyboard Performance Showcase 1">
+              <img src="img/show1.png" alt="SIMZ Academy Performance Showcase 1" loading="lazy" width="131" height="269">
+              <div class="showcase-play-btn"><i class="ri-play-fill"></i></div>
+            </div>
+            <div class="showcase-info">
+              <h4 class="showcase-title">Keyboard Recital Showcase 1</h4>
+              <div class="showcase-meta">
+                <i class="ri-youtube-fill" style="color: #FF0000;"></i>
+                <span>SIMZ Academy Official YouTube</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 2 -->
+          <article class="showcase-card">
+            <div class="showcase-thumbnail-wrap" onclick="openVideoModal('IFqZANAmoMw')" role="button" tabindex="0" aria-label="Play Keyboard Performance Showcase 2">
+              <img src="img/show2.png" alt="SIMZ Academy Performance Showcase 2" loading="lazy" width="131" height="269">
+              <div class="showcase-play-btn"><i class="ri-play-fill"></i></div>
+            </div>
+            <div class="showcase-info">
+              <h4 class="showcase-title">Piano Technique Showcase 2</h4>
+              <div class="showcase-meta">
+                <i class="ri-youtube-fill" style="color: #FF0000;"></i>
+                <span>SIMZ Academy Official YouTube</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 3 -->
+          <article class="showcase-card">
+            <div class="showcase-thumbnail-wrap" onclick="openVideoModal('XWU6pxeeGGc')" role="button" tabindex="0" aria-label="Play Performance Short 3">
+              <img src="img/show3.png" alt="SIMZ Academy Performance Showcase 3" loading="lazy" width="131" height="269">
+              <div class="showcase-play-btn"><i class="ri-play-fill"></i></div>
+            </div>
+            <div class="showcase-info">
+              <h4 class="showcase-title">Student Performance Short</h4>
+              <div class="showcase-meta">
+                <i class="ri-youtube-fill" style="color: #FF0000;"></i>
+                <span>YouTube Shorts Showcase</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video 4 -->
+          <article class="showcase-card">
+            <div class="showcase-thumbnail-wrap" onclick="openVideoModal('DT3iAmT6nTc')" role="button" tabindex="0" aria-label="Play Performance Showcase 4">
+              <img src="img/show4.png" alt="SIMZ Academy Performance Showcase 4" loading="lazy" width="131" height="269">
+              <div class="showcase-play-btn"><i class="ri-play-fill"></i></div>
+            </div>
+            <div class="showcase-info">
+              <h4 class="showcase-title">Acoustic & Melody Session</h4>
+              <div class="showcase-meta">
+                <i class="ri-youtube-fill" style="color: #FF0000;"></i>
+                <span>SIMZ Academy Official YouTube</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="https://www.youtube.com/watch?v=ieZLoGxHKDo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="ri-youtube-line" style="color: #FF0000;"></i> Watch Full Demo Class on YouTube
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Photo Gallery Preview Section -->
+    <section class="section section-bg-subtle" id="gallery-preview">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Academy Life</span>
+          <h2 class="section-title">Moments of Music & Learning</h2>
+          <p class="section-subtitle">
+            Authentic moments from our classroom sessions, rehearsals, student performances, and award recognitions.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          
+          <div class="gallery-item" data-src="img/gallery/gallery-1.jpg" data-title="Keyboard Practice Rehearsal" data-desc="Students mastering sight-reading techniques." onclick="openLightbox(0)">
+            <img src="img/gallery/gallery-1.jpg" alt="SIMZ Academy Keyboard Rehearsal" loading="lazy" width="1840" height="3264">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="ri-zoom-in-line"></i></div>
+              <h5>Keyboard Rehearsal</h5>
+              <p>Sight-reading and technique practice</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="img/gallery/gallery-5.png" data-title="Studio Keyboard Setup" data-desc="Dedicated studio instruments for training." onclick="openLightbox(4)">
+            <img src="img/gallery/gallery-5.png" alt="Studio Keyboard at SIMZ Academy" loading="lazy" width="1920" height="1080">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="ri-zoom-in-line"></i></div>
+              <h5>Studio Instrument Setup</h5>
+              <p>Professional multi-tier keyboards</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="img/gallery/gallery-6.png" data-title="TCL Syllabus Session" data-desc="Step-by-step guidance on Trinity exam pieces." onclick="openLightbox(5)">
+            <img src="img/gallery/gallery-6.png" alt="TCL Syllabus Class Session" loading="lazy" width="1920" height="1080">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="ri-zoom-in-line"></i></div>
+              <h5>Trinity Syllabus Session</h5>
+              <p>Exam preparation & performance training</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="img/gallery/gallery-7.png" data-title="Instrument Practice Session" data-desc="Acoustic coordination and harmony." onclick="openLightbox(6)">
+            <img src="img/gallery/gallery-7.png" alt="Instrument Practice at SIMZ" loading="lazy" width="1920" height="1080">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="ri-zoom-in-line"></i></div>
+              <h5>Harmonic Coordination</h5>
+              <p>Acoustic technique and ear training</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="img/gallery/gallery-10.png" data-title="Audio Production Setup" data-desc="Sound engineering DAW mixing workspace." onclick="openLightbox(9)">
+            <img src="img/gallery/gallery-10.png" alt="Audio Production at SIMZ Academy" loading="lazy" width="1920" height="1080">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="ri-zoom-in-line"></i></div>
+              <h5>Sound Engineering Studio</h5>
+              <p>Mixing & DAW production classes</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-src="img/photo1660568008.jpeg" data-title="Student Class Showcase" data-desc="Interactive offline classroom experience." onclick="openLightbox(10)">
+            <img src="img/photo1660568008.jpeg" alt="Student Class at SIMZ Academy" loading="lazy" width="959" height="1280">
+            <div class="gallery-overlay">
+              <div class="gallery-zoom-icon"><i class="ri-zoom-in-line"></i></div>
+              <h5>Classroom Learning</h5>
+              <p>Personalized attention in studio</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 36px;">
+          <a href="gly.html" class="btn btn-secondary">
+            <i class="ri-gallery-line"></i> View Full Gallery (All 11 Photos)
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Demo Class Conversion CTA Section -->
+    <section class="section" id="demo-cta" aria-label="Book a Free Demo">
+      <div class="container">
+        <div class="demo-cta-section">
+          <div class="demo-cta-container">
+            <div class="brand-accent-bar" style="background: linear-gradient(90deg, #F59E0B, #FFD166); margin: 0 auto 16px auto;"></div>
+            <span class="section-tag tag-white">Ready to Begin?</span>
+            <h2 class="demo-cta-title">Your Musical Journey Starts Here.</h2>
+            <p class="demo-cta-desc">
+              Take the first step towards discovering your musical potential. Connect with SIMZ Academy and explore your learning opportunities across online and offline programs.
+            </p>
+            
+            <div class="demo-cta-buttons">
+              <a href="https://wa.me/917907386458?text=Hello%20Simz%20Academy,%20I%20would%20like%20to%20book%20a%20demo%20class." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+                <i class="ri-whatsapp-line"></i> Connect on WhatsApp
+              </a>
+              <button type="button" class="btn btn-ghost-white btn-lg" onclick="openVideoModal('ieZLoGxHKDo')">
+                <i class="ri-play-circle-line"></i> Watch Sample Demo Class
+              </button>
+              <a href="#contact" class="btn btn-secondary btn-lg" style="background-color: #FFFFFF; color: var(--color-primary) !important;">
+                <i class="ri-mail-send-line"></i> Send an Enquiry
+              </a>
+            </div>
+
+            <p class="demo-disclaimer">
+              * Demo sessions subject to instructor schedule and studio slot availability. Contact our coordinator to confirm your session.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map Section (Preserves Working Form Backend) -->
+    <section class="section section-bg-white" id="contact">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Feel Free to Contact Us</h2>
+          <p class="section-subtitle">
+            We will try our level best to assist you with course admissions, syllabus details, and scheduling.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Details Column -->
+          <div class="contact-info-card">
+            <h3>Academy Information</h3>
+            <p style="color: var(--color-text-muted); font-size: 0.9375rem;">
+              Reach out directly by phone, WhatsApp or visit our studio locations in Malappuram district.
+            </p>
+
+            <div class="contact-detail-list">
+              
+              <div class="contact-detail-item">
+                <div class="contact-icon-bubble"><i class="ri-phone-fill"></i></div>
+                <div>
+                  <h5>Call Us</h5>
+                  <p><a href="tel:+919072397378">+91 9072397378</a></p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-bubble" style="background-color: rgba(37, 211, 102, 0.12); color: #25D366;"><i class="ri-whatsapp-fill"></i></div>
+                <div>
+                  <h5>WhatsApp Quick Chat</h5>
+                  <p><a href="https://wa.me/917907386458?text=Hello%20Simz%20Academy,%20I%20have%20an%20enquiry." target="_blank" rel="noopener noreferrer">+91 7907386458</a></p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-bubble"><i class="ri-mail-fill"></i></div>
+                <div>
+                  <h5>Email Address</h5>
+                  <p><a href="mailto:simzzacademy@gmail.com">simzzacademy@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon-bubble"><i class="ri-map-pin-2-fill"></i></div>
+                <div>
+                  <h5>Studio Locations</h5>
+                  <p><strong>Campus 1:</strong> Chungathara, Malappuram, Kerala</p>
+                  <p style="margin-top: 4px;"><strong>Campus 2:</strong> Manimooly, Malappuram, Kerala</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Form Column (Connected to original Google Apps Script backend) -->
+          <div class="contact-form-card">
+            <h3 class="contact-form-title">Send a Direct Message</h3>
+            <p class="contact-form-desc">Fill out the form below and our coordinator will respond promptly.</p>
+
+            <div class="form-alert" role="alert"></div>
+
+            <form class="ajax-contact-form" id="contact-form" action="" method="post">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-whatsapp" class="form-label">WhatsApp Number <span class="required">*</span></label>
+                <input type="tel" id="form-whatsapp" name="whatsapp" class="form-input" placeholder="e.g. +91 9072397378" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address (Optional)</label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="youremail@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message / Course of Interest <span class="required">*</span></label>
+                <textarea id="form-message" name="message" class="form-textarea" placeholder="Tell us which course (Keyboard, Guitar, Violin, Sound Engineering) or questions you have..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg">
+                <i class="ri-send-plane-fill"></i> Submit Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Google Map Section (SIMZ Academy Chungathara) -->
+        <div class="map-wrapper" aria-label="SIMZ Academy Location Map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.031571880026!2d76.27242357491623!3d11.332402988852136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6231ecae6857b%3A0xa2e16d220ff37a13!2sSimz%20Academy!5e0!3m2!1sen!2sin!4v1687784524095!5m2!1sen!2sin" 
+            title="SIMZ Academy Google Maps Location"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand" aria-label="SIMZ Academy Home">
+            <img src="img/simz logo.png" alt="SIMZ Academy Logo" width="44" height="48">
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">SIMZ <span style="color: var(--color-primary-light);">Academy</span></span>
+              <span class="brand-tagline" style="color: rgba(255,255,255,0.7);">School of Innovative Music</span>
+            </div>
+          </a>
+          <p>
+            SIMZ Academy has been providing high quality online and offline musical instruction since 2016, specializing in Trinity College London syllabus keyboard and piano learning.
+          </p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="https://wa.me/917907386458" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+            <a href="https://www.youtube.com/watch?v=ieZLoGxHKDo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube Channel"><i class="ri-youtube-line"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+            <li><a href="course.html"><i class="ri-arrow-right-s-line"></i> Musical Courses</a></li>
+            <li><a href="#about"><i class="ri-arrow-right-s-line"></i> About the Academy</a></li>
+            <li><a href="team.html"><i class="ri-arrow-right-s-line"></i> Founder & Team</a></li>
+            <li><a href="gly.html"><i class="ri-arrow-right-s-line"></i> Student Gallery</a></li>
+            <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact & Locations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Programs -->
+        <div>
+          <h4 class="footer-heading">Musical Courses</h4>
+          <ul class="footer-links">
+            <li><a href="course.html#keyboard"><i class="ri-arrow-right-s-line"></i> Keyboard (Trinity TCL)</a></li>
+            <li><a href="course.html#keyboard"><i class="ri-arrow-right-s-line"></i> Classical Piano</a></li>
+            <li><a href="course.html#guitar"><i class="ri-arrow-right-s-line"></i> Fingerstyle Guitar</a></li>
+            <li><a href="course.html#violin"><i class="ri-arrow-right-s-line"></i> Western Violin</a></li>
+            <li><a href="course.html#sound-engineering"><i class="ri-arrow-right-s-line"></i> Sound Engineering</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ieZLoGxHKDo" target="_blank" rel="noopener noreferrer"><i class="ri-arrow-right-s-line"></i> Free Demo Class</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Summary -->
+        <div>
+          <h4 class="footer-heading">Contact Details</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line"></i>
+              <span>Chungathara & Manimooly, Kerala, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line"></i>
+              <a href="tel:+919072397378">+91 9072397378</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-whatsapp-line"></i>
+              <a href="https://wa.me/917907386458">+91 7907386458</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line"></i>
+              <a href="mailto:simzzacademy@gmail.com">simzzacademy@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 SIMZ Academy. All rights reserved. Original brand identity & content preserved.</p>
+        <p>Website developed & maintained by <a href="contact.html">AJS Web Creatives</a>.</p>
+      </div>
     </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/917907386458?text=Hello%20Simz%20Academy,%20I%20would%20like%20to%20know%20more%20about%20your%20courses." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-line floating-whatsapp-icon"></i>
+    <span>Chat with Us</span>
+  </a>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video Player">
+    <button class="lightbox-close-btn" onclick="closeVideoModal()" aria-label="Close Video"><i class="ri-close-line"></i></button>
+    <div class="video-modal-container">
+      <iframe id="video-modal-iframe" class="video-modal-iframe" allow="autoplay; encrypted-media" allowfullscreen title="YouTube Video Preview"></iframe>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+    <button class="lightbox-close-btn" onclick="closeLightbox()" aria-label="Close Lightbox"><i class="ri-close-line"></i></button>
+    <button class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous Image"><i class="ri-arrow-left-s-line"></i></button>
+    <button class="lightbox-nav-btn lightbox-next-btn" aria-label="Next Image"><i class="ri-arrow-right-s-line"></i></button>
+    <div class="lightbox-container">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="SIMZ Academy Gallery Image">
+      <div class="lightbox-caption">
+        <h4 id="lightbox-title">SIMZ Academy</h4>
+        <p id="lightbox-counter">1 of 11</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
 </body>
-<script src="script.js"></script>
-<script> 
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/service-worker.js'); 
-	} 
-</script>
 </html>

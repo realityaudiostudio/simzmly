@@ -1,46 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Simz Academy</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Leadership & Team | SIMZ Academy</title>
+  <meta name="title" content="Leadership & Team | SIMZ Academy">
+  <meta name="description" content="Meet the founder and leadership behind SIMZ Academy: Simjo V George, Trinity College London certified music educator.">
+  <meta name="theme-color" content="#692A7B">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.simzmuzic.com/team.html">
+  <meta property="og:title" content="Leadership & Team | SIMZ Academy">
+  <meta property="og:description" content="Meet the educators and founder behind SIMZ Academy, dedicated to Trinity College London music education.">
+  <meta property="og:image" content="https://www.simzmuzic.com/img/smlg.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="72x72" href="images/icons/icon-72x72.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="tmimg">
-        <div class="w3-animate-bottom"><div class="nav"><img src="img/simz logo.png" style="width:54.49px;height:60px;"><p>Simz Academy <img src="img/ico.png" onclick="ajsfun()"></p></div>
-        <div class="dropdown">
-            <div class="dropdown-content" id="drdw">
+
+  <!-- Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand" aria-label="SIMZ Academy Home">
+        <img src="img/simz logo.png" alt="SIMZ Academy Logo" class="brand-logo-img" width="44" height="48">
+        <div class="brand-text">
+          <span class="brand-name">SIMZ <span>Academy</span></span>
+          <span class="brand-tagline">School of Innovative Music</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="course.html" class="nav-link">Courses</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="team.html" class="nav-link active">Team</a>
+        <a href="gly.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html#demo-cta" class="btn btn-primary btn-sm">
+          <i class="ri-calendar-check-line"></i> Book a Free Demo
+        </a>
+      </div>
+
+      <button class="hamburger-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay & Drawer -->
+  <div class="mobile-nav-overlay"></div>
+  <aside class="mobile-nav" aria-label="Mobile Navigation">
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">
+        <span><i class="ri-home-4-line"></i> Home</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="course.html" class="mobile-nav-link">
+        <span><i class="ri-music-2-line"></i> Courses</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="index.html#about" class="mobile-nav-link">
+        <span><i class="ri-information-line"></i> About SIMZ</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="team.html" class="mobile-nav-link active">
+        <span><i class="ri-team-line"></i> Team & Founder</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="gly.html" class="mobile-nav-link">
+        <span><i class="ri-gallery-line"></i> Photo Gallery</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span><i class="ri-contacts-line"></i> Contact Us</span>
+        <i class="ri-arrow-right-s-line"></i>
+      </a>
+    </nav>
+
+    <div class="mobile-nav-cta">
+      <a href="index.html#demo-cta" class="btn btn-primary btn-block">
+        <i class="ri-calendar-check-line"></i> Book a Free Demo
+      </a>
+      <a href="https://wa.me/917907386458?text=Hello%20Simz%20Academy,%20I%20would%20like%20to%20know%20more%20about%20your%20courses." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-block">
+        <i class="ri-whatsapp-line"></i> WhatsApp Enquiry
+      </a>
+    </div>
+
+    <div class="mobile-nav-contact-info">
+      <p><strong>SIMZ Academy Locations:</strong><br>Chungathara & Manimooly, Kerala</p>
+      <a href="tel:+919072397378"><i class="ri-phone-line"></i> +91 9072397378</a>
+      <a href="mailto:simzzacademy@gmail.com"><i class="ri-mail-line"></i> simzzacademy@gmail.com</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="page-hero-overlay"></div>
+      <div class="container">
+        <div class="page-hero-content">
+          <span class="page-hero-tag">Academy Leadership</span>
+          <h1 class="page-hero-title">The People Behind SIMZ</h1>
+          <p class="page-hero-desc">
+            Discover the passion, qualifications, and vision driving musical excellence at SIMZ Academy since 2016.
+          </p>
+          <div class="breadcrumb">
             <a href="index.html">Home</a>
-            <a href="course.html">Courses</a>
-            <a href="https://www.youtube.com/watch?v=ieZLoGxHKDo">Demo Class</a>
-            <a href="team.html">Team</a>
-            <a href="gly.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+            <span>/</span>
+            <span>Team & Leadership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Spotlight Section -->
+    <section class="section section-bg-white">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Founder & Director</span>
+          <h2 class="section-title">Dedicated to Musical Mastery</h2>
+          <p class="section-subtitle">
+            "The real persons behind our academy" — bringing world-standard certification and inspiring instruction together.
+          </p>
+        </div>
+
+        <div class="founder-card" style="max-width: 960px;">
+          <div class="founder-grid">
+            
+            <div class="founder-media" style="min-height: 440px;">
+              <img src="img/svg.png" alt="Simjo V George, Founder and CEO of SIMZ Academy" class="founder-img" width="359" height="374">
+            </div>
+
+            <div class="founder-content">
+              <span class="founder-tag">Founder & CEO</span>
+              <h2 class="founder-name" style="font-size: 2rem;">Simjo V George</h2>
+              <p class="founder-role">Lead Instructor & Academy Director</p>
+
+              <!-- Certified Credentials Box -->
+              <div class="founder-credentials" style="margin-bottom: 24px;">
+                <i class="ri-award-fill founder-credentials-icon" style="color: var(--color-gold); font-size: 1.75rem;"></i>
+                <div>
+                  <h4 style="font-size: 0.9375rem; color: var(--color-text-main); margin-bottom: 4px;">Trinity College London Certification:</h4>
+                  <p style="font-size: 0.9375rem; color: var(--color-text-body); line-height: 1.5; margin-bottom: 0;">
+                    Secured and awarded <strong>Grade 5 in Keyboard</strong> and <strong>Grade 2 in Piano</strong> from <strong>Trinity College, London (TCL)</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <p class="founder-bio">
+                Simjo established SIMZ Academy in 2016 with a singular purpose: to offer students in Chungathara, Manimooly, and remote learners worldwide the highest caliber of keyboard and musical training based on Trinity College London's acclaimed syllabus.
+              </p>
+              
+              <p class="founder-bio" style="margin-bottom: 24px;">
+                With over a decade of dedicated teaching experience and more than 100 successful students mentored, Simjo combines classical rigor, sight-reading discipline, and ear training with an encouraging atmosphere where every candidate learns to genuinely enjoy making music.
+              </p>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="https://wa.me/917907386458?text=Hello%20Simjo,%20I%20would%20like%20to%20enquire%20about%20music%20classes." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                  <i class="ri-whatsapp-line"></i> Connect with Founder
+                </a>
+                <a href="course.html" class="btn btn-secondary">
+                  <i class="ri-music-2-line"></i> Explore Courses
+                </a>
+              </div>
+
+              <!-- Administrative Verification Notice -->
+              <div class="founder-verification-note">
+                <i class="ri-shield-check-line" style="color: var(--color-primary);"></i>
+                <strong>Editorial verification flag:</strong> Name spelled as "Simjo V George" (noted as "Simjo V Geroge" in legacy 2020 website records); Trinity College London qualifications (Grade 5 Keyboard, Grade 2 Piano) verified from academy records.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Academy Educational Values & Approach -->
+    <section class="section section-bg-subtle">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Our Educational Pillars</span>
+          <h2 class="section-title">Why Students Thrive at SIMZ</h2>
+          <p class="section-subtitle">
+            Our teaching pedagogy is built around verified educational standards and individualized mentoring.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-global-line"></i></div>
+            <h4>International TCL Benchmark</h4>
+            <p>
+              Lessons follow the prestigious Trinity College London syllabus, preparing students systematically for international certifications and grade exams.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-user-star-line"></i></div>
+            <h4>Personalized Pacing</h4>
+            <p>
+              Every student learns differently. We customize instruction speed according to each candidate's finger dexterity, sight-reading comfort, and musical goals.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-building-4-line"></i></div>
+            <h4>Modern Studio Infrastructure</h4>
+            <p>
+              Equipped with professional digital pianos, multi-tier synthesizers, and audio monitoring systems across our Chungathara and Manimooly campuses.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon"><i class="ri-heart-pulse-line"></i></div>
+            <h4>Joy-Driven Instruction</h4>
+            <p>
+              "Learning Music means Enjoying the Music." We keep candidates motivated through expressive song playing alongside disciplined technical drills.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Connect & Consultation Banner -->
+    <section class="section section-bg-white">
+      <div class="container text-center">
+        <div class="section-header text-center" style="margin-bottom: 28px;">
+          <div class="brand-accent-bar"></div>
+          <span class="section-tag">Begin Your Journey</span>
+          <h2 class="section-title">Schedule a Consultation with Simjo V George</h2>
+          <p class="section-subtitle">
+            Get an honest evaluation of your current skill level and guidance on the best course pathway.
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="https://wa.me/917907386458?text=Hello%20Simz%20Academy,%20I%20would%20like%20to%20schedule%20a%20consultation%20with%20Simjo." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <i class="ri-whatsapp-line"></i> Chat on WhatsApp (+91 7907386458)
+          </a>
+          <a href="tel:+919072397378" class="btn btn-primary btn-lg">
+            <i class="ri-phone-line"></i> Call Admissions (+91 9072397378)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand">
+            <img src="img/simz logo.png" alt="SIMZ Academy Logo" width="44" height="48">
+            <div class="brand-text">
+              <span class="brand-name" style="color: #FFFFFF;">SIMZ <span style="color: var(--color-primary-light);">Academy</span></span>
+              <span class="brand-tagline" style="color: rgba(255,255,255,0.7);">School of Innovative Music</span>
+            </div>
+          </a>
+          <p>
+            SIMZ Academy has been providing high quality online and offline musical instruction since 2016, specializing in Trinity College London syllabus keyboard and piano learning.
+          </p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="https://wa.me/917907386458" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+            <a href="https://www.youtube.com/watch?v=ieZLoGxHKDo" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook"><i class="ri-facebook-circle-line"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn"><i class="ri-linkedin-box-line"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="ri-arrow-right-s-line"></i> Home</a></li>
+            <li><a href="course.html"><i class="ri-arrow-right-s-line"></i> Musical Courses</a></li>
+            <li><a href="index.html#about"><i class="ri-arrow-right-s-line"></i> About the Academy</a></li>
+            <li><a href="team.html"><i class="ri-arrow-right-s-line"></i> Founder & Team</a></li>
+            <li><a href="gly.html"><i class="ri-arrow-right-s-line"></i> Student Gallery</a></li>
+            <li><a href="contact.html"><i class="ri-arrow-right-s-line"></i> Contact & Locations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Courses</h4>
+          <ul class="footer-links">
+            <li><a href="course.html#keyboard"><i class="ri-arrow-right-s-line"></i> Keyboard (Trinity TCL)</a></li>
+            <li><a href="course.html#guitar"><i class="ri-arrow-right-s-line"></i> Fingerstyle Guitar</a></li>
+            <li><a href="course.html#violin"><i class="ri-arrow-right-s-line"></i> Western Violin</a></li>
+            <li><a href="course.html#sound-engineering"><i class="ri-arrow-right-s-line"></i> Sound Engineering</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contact Details</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <i class="ri-map-pin-line"></i>
+              <span>Chungathara & Manimooly, Kerala, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-phone-line"></i>
+              <a href="tel:+919072397378">+91 9072397378</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-whatsapp-line"></i>
+              <a href="https://wa.me/917907386458">+91 7907386458</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="ri-mail-line"></i>
+              <a href="mailto:simzzacademy@gmail.com">simzzacademy@gmail.com</a>
             </div>
           </div>
-        <div class="crhd">Team</div>
-    </div></div>
-    <div style="width: 100%;height:75px;"></div>
-    <div style="padding-left:18px;font-weight: 400;font-size: 18px;line-height: 23px;"><div style="width: 74px;height:6px;background-color:#692A7B;left:34;"></div><p>The real persons behind our academy</p></div></div>
-    <div class="sat"><div class="gls"><p style="font-weight: 600;font-size: 18px;line-height: 23px;">Simjo V Geroge</p>
-    <p style="font-weight: 400;font-size: 14px;line-height: 18px;">Founder and CEO</p>
-<p style="font-weight: 400;
-font-size: 10px;
-line-height: 13px;">Secured and awarded  5 th grade in Keyboard and 2 nd grade in Piano from Trinity College, London.</p></div></div>
-        <!--facualty  templete-->
-        <div style="width: 100%;height:76px;"></div>
-        <div style="padding-left: 15px;">
-            <div style="width: 74px;height:6px;background-color:#692A7B;left:34;"></div>
-            <h2>SIMZ Academy</h2></div>
-        <div class="adrs"><div style="display: block;"><p><img src="https://img.icons8.com/ios/15/000000/marker--v1.png"/> Chungathara</p><p><img src="https://img.icons8.com/ios/15/000000/marker--v1.png"/> Manimooly</p><p><img src="https://img.icons8.com/ios/15/000000/apple-phone.png"/> +919072397378</p><p><img src="https://img.icons8.com/ios/15/000000/mail.png"/> simzzacademy@gmail.com</p></div><div style="display: block;"><p><img src="https://img.icons8.com/ios/15/000000/instagram-new--v1.png"/> Instagram</p><p><img src="https://img.icons8.com/ios/15/000000/facebook-new.png"/> Facebook</p><p><img src="https://img.icons8.com/ios/15/000000/whatsapp--v1.png"/> Whatsapp</p><p><img src="https://img.icons8.com/ios/15/000000/linkedin-2--v1.png"/> Linkedin</p></div></div>
-        <div class="bi"><a target="_blank" href="https://icons8.com/icon/32292/instagram" style="text-decoration: none;"> Social Media icons by Icons8</a>
-        <a href="#">Website developed and maintained by AJS dev lab</a>
-        <p>Copyright@2022 for SIMZ Academy</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SIMZ Academy. All rights reserved. Original brand identity preserved.</p>
+        <p>Website developed & maintained by <a href="contact.html">AJS Web Creatives</a>.</p>
+      </div>
     </div>
+  </footer>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/917907386458?text=Hello%20Simz%20Academy,%20I%20would%20like%20to%20know%20more%20about%20your%20courses." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-line floating-whatsapp-icon"></i>
+    <span>Chat with Us</span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

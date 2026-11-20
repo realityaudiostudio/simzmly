@@ -1,10 +1,11 @@
 {
-  "name": "Simz Academy",
-  "short_name": "Simz Academy",
-  "theme_color": "#262626",
+  "name": "SIMZ Academy - School of Innovative Music",
+  "short_name": "SIMZ Academy",
+  "description": "Professional music academy providing Trinity College London syllabus keyboard, piano, guitar, violin & sound engineering classes.",
+  "theme_color": "#692A7B",
   "background_color": "#692A7B",
   "display": "standalone",
-  "orientation": "",
+  "orientation": "portrait-primary",
   "scope": "/",
   "start_url": "/index.html",
   "icons": [
